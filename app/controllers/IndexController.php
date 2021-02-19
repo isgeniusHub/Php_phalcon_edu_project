@@ -20,9 +20,11 @@ class IndexController extends BaseController
         // echo "indexAction<br>";
         // $this->getParams();
         
-        $name = "Test name";        
+        $name = "Test name";
+        $authTitle = "You can authorized by link:";
         $this->view->setVar('name', $name);
-        $this->view->setVar('users', 
+        $this->view->setVar('authTitle', $authTitle );
+        $this->view->setVar('users',
             array(
                 "a" => "test1",
                 "b" => "test2",

@@ -5,6 +5,8 @@
     	<title>Index page 2</title>
     </head>
     <body>
+    <p><?= $authTitle ?></p>
+    <a href="/auth/">Click me</a>
     <p><?= $name ?></p>
     <ul>
     	<?php foreach ($users as $user) { ?>
