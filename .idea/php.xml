@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="31e3568d-0d6a-4b0c-8df8-5ebb10371146" name="php:7.2-apache" home="docker://DATA" debugger_id="php.debugger.XDebug">
@@ -57,4 +58,7 @@
     </phpInfoCache>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+=======
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
+>>>>>>> 024bbe322c7a2f1289adfe28c3ed339758b50794
 </project>
