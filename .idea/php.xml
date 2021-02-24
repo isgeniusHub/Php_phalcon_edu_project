@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="31e3568d-0d6a-4b0c-8df8-5ebb10371146" name="php:7.2-apache" home="docker://DATA" debugger_id="php.debugger.XDebug">
-        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker2" DOCKER_IMAGE_NAME="php:7.2-apache" DOCKER_REMOTE_PROJECT_PATH="/opt/project" />
+      <interpreter id="b9a592c3-164e-47e2-9614-c6ded519d62c" name="www" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="www" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
+          <type_data command="RUN" />
+          <dockerComposeConfigurationPaths>
+            <item value="$PROJECT_DIR$/docker-compose.yml" />
+          </dockerComposeConfigurationPaths>
+          <envs />
+        </remote_data>
       </interpreter>
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
-      <interpreter name="php:7.2-apache">
+      <interpreter name="www">
         <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="7.2.34">
-          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-sodium.ini</additional_php_ini>
+          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-phalcon.ini, /usr/local/etc/php/conf.d/docker-php-ext-psr.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini</additional_php_ini>
           <configuration_file />
           <configuration_options>
             <configuration_option name="include_path" value=".:/usr/local/lib/php" />
@@ -41,7 +46,9 @@
             <extension name="openssl" />
             <extension name="pcre" />
             <extension name="pdo_sqlite" />
+            <extension name="phalcon" />
             <extension name="posix" />
+            <extension name="psr" />
             <extension name="readline" />
             <extension name="session" />
             <extension name="sodium" />
@@ -58,7 +65,5 @@
     </phpInfoCache>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
-=======
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
->>>>>>> 024bbe322c7a2f1289adfe28c3ed339758b50794
+  <component name="PhpRuntimeConfiguration" document_root_path="www" />
 </project>

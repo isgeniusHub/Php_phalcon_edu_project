@@ -26,4 +26,4 @@ RUN set -xe && \
         && \
         php -m
 
-COPY docker-phalcon-* /usr/local/bin/
+RUN a2enmod rewrite
