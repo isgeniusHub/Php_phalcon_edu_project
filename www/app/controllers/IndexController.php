@@ -23,7 +23,10 @@ class IndexController extends BaseController
         $name = "Test name";
         $authTitle = "You can authorized by link:";
         $this->view->setVar('name', $name);
-        $this->view->setVar('authTitle', $authTitle );
+        $this->view->setVar('authTitle', $this->tag->linkTo(
+            'signup',
+            'Sign Up Here!'
+        ));
         $this->view->setVar('users',
             array(
                 "a" => "test1",
