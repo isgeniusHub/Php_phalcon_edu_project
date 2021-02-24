@@ -6,7 +6,7 @@
     </head>
     <body>
     <p><?= $authTitle ?></p>
-    <a href="/auth/">Click me</a>
+    <a href="/auth/"></a>
     <p><?= $name ?></p>
     <ul>
     	<?php foreach ($users as $user) { ?>
