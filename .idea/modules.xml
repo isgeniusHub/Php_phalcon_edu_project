@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/php-phalcon.iml" filepath="$PROJECT_DIR$/.idea/php-phalcon.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/.idea/localhost.iml" filepath="$PROJECT_DIR$/.idea/localhost.iml" />
+>>>>>>> 024bbe322c7a2f1289adfe28c3ed339758b50794
     </modules>
   </component>
 </project>
