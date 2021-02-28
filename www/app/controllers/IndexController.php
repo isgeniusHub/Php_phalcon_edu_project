@@ -14,35 +14,20 @@ class IndexController extends BaseController
         parent::initialize();
         echo "initialize IndexController<br>";
     }
-    
+
     public function indexAction ()
     {
         // echo "indexAction<br>";
         // $this->getParams();
-        
-        $name = "Test name";
-        $authTitle = "You can authorized by link:";
-        $this->view->setVar('name', $name);
-        $this->view->setVar('authTitle', $this->tag->linkTo(
-            'signup',
-            'Sign Up Here!'
-        ));
-        $this->view->setVar('users',
-            array(
-                "a" => "test1",
-                "b" => "test2",
-                "c" => "test3",
-                "d" => "test4",
-                "e" => "test5",
-            )
-        );
+
+        $this->view->users = Users::find();
     }
     
    /* public function getParams ($param = "TEST")
     {
         echo "Параметр равен {$param}<br>";
     }*/
-    
+
     public function testAction ()
     {
         $this->view->disable();

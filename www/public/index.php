@@ -30,14 +30,14 @@ $container->set(
     function () {
         $view = new View();
         $view->setViewsDir(APP_PATH . '/views/');
-        
+
         $view->registerEngines(
             array(
                 //".volt" => 'Phalcon\Mvc\View\Engine\Volt'
                 ".twig" => 'Phalcon\Mvc\View\Engine\Volt'
             )
         );
-        
+
         return $view;
     }
 );
@@ -57,11 +57,11 @@ $container->set(
         return new Mysql(
             [
                 'adapter'  => 'Mysql',
-                'host'     => 'localhost',
+                'host'     => '172.26.176.1',
                 'username' => 'user',
                 'password' => 'test',
                 'dbname'   => 'myDb',
-                'port'     => '3306',
+                'port'     => '33060',
                 "options"  => [
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
